@@ -1,7 +1,7 @@
 {
   "name": "cortex-plugin-marketplace-seller",
-  "version": "1.0.0",
-  "description": "Marketplace Seller Agent — Amazon/eBay/Etsy/Walmart listing optimization, inventory sync, repricing, review monitoring",
+  "version": "1.0.1",
+  "description": "Marketplace Seller Agent \u2014 Amazon/eBay/Etsy/Walmart listing optimization, inventory sync, repricing, review monitoring",
   "kind": "esm",
   "entryPoint": "mod.ts",
   "runtime": "deno",
@@ -9,7 +9,10 @@
   "license": "MIT",
   "repository": "https://github.com/CortexPrism/cortex-plugin-marketplace-seller",
   "homepage": "https://cortexprism.io/marketplace/plugins/marketplace-seller",
-  "capabilities": ["tools", "network:fetch"],
+  "capabilities": [
+    "tools",
+    "network:fetch"
+  ],
   "tools": [
     {
       "name": "seller_optimize_listing",
@@ -21,7 +24,11 @@
       "description": "Sync inventory across marketplaces",
       "params": []
     },
-    { "name": "seller_reprice", "description": "Auto-reprice against competitors", "params": [] },
+    {
+      "name": "seller_reprice",
+      "description": "Auto-reprice against competitors",
+      "params": []
+    },
     {
       "name": "seller_monitor_reviews",
       "description": "Monitor and respond to reviews",
@@ -29,6 +36,13 @@
     }
   ],
   "dependencies": {},
-  "peerDependencies": { "cortex": ">=1.0.0" },
-  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+  "peerDependencies": {
+    "cortex": ">=0.51.0"
+  },
+  "aiDisclosure": {
+    "tools": [
+      "Kilo (DeepSeek) \u2014 batch scaffold"
+    ],
+    "humanReview": true
+  }
 }
